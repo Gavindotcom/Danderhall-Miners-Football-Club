@@ -137,18 +137,18 @@ export default function Home() {
           <div className="team-cards">
             <TeamCard
               title="Women's Team"
-              image="/images/womens-team.jpg"
+              image="/images/women.jpg"
             />
 
             <TeamCard
               title="2015s"
-              image="/images/2015s.jpg"
+              image="/images/2015.jpg"
             />
 
             <TeamCard
               title="Future Teams"
               subtitle="Growing our club"
-              image="/images/youth-team.jpg"
+              image="/images/future.jpg"
             />
           </div>
         </div>
