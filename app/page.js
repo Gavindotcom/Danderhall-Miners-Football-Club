@@ -262,18 +262,24 @@ export default function Home() {
   <div className="sponsor-slider">
     <div className="sponsor-track">
 
-      <SponsorLogo src="/images/sponsor-1.png" name="Sponsor 1" />
-      <SponsorLogo src="/images/sponsor-2.png" name="Sponsor 2" />
-      <SponsorLogo src="/images/sponsor-3.png" name="Sponsor 3" />
-      <SponsorLogo src="/images/sponsor-4.png" name="Sponsor 4" />
-      <SponsorLogo src="/images/sponsor-5.png" name="Sponsor 5" />
+      <SponsorLogo src="/images/CK.jpg" name="CK Coaching" />
+      <SponsorLogo src="/images/AR.JPG" name="AtkinsRealis" />
+      <SponsorLogo src="/images/Auto.jpg" name="Bold Autos Ltd" />
+      <SponsorLogo src="/images/City.png" name="City Plumbing" />
+      <SponsorLogo src="/images/Crowe.jpg" name="CROWE ECO HEATING" />
+      <SponsorLogo src="/images/EMF-logo.webp" name="Eskside Motor Factors" />
+      <SponsorLogo src="/images/Forth.jpg" name="Forth Scaffolding Ltd" />
+      <SponsorLogo src="/images/EdInn" name="The Edmonstone Inn" />
 
       {/* Duplicate set creates the continuous loop */}
-      <SponsorLogo src="/images/sponsor-1.png" name="Sponsor 1" />
-      <SponsorLogo src="/images/sponsor-2.png" name="Sponsor 2" />
-      <SponsorLogo src="/images/sponsor-3.png" name="Sponsor 3" />
-      <SponsorLogo src="/images/sponsor-4.png" name="Sponsor 4" />
-      <SponsorLogo src="/images/sponsor-5.png" name="Sponsor 5" />
+      <SponsorLogo src="/images/CK.jpg" name="CK Coaching" />
+      <SponsorLogo src="/images/AR.JPG" name="AtkinsRealis" />
+      <SponsorLogo src="/images/Auto.jpg" name="Bold Autos Ltd" />
+      <SponsorLogo src="/images/City.png" name="City Plumbing" />
+      <SponsorLogo src="/images/Crowe.jpg" name="CROWE ECO HEATING" />
+      <SponsorLogo src="/images/EMF-logo.webp" name="Eskside Motor Factors" />
+      <SponsorLogo src="/images/Forth.jpg" name="Forth Scaffolding Ltd" />
+      <SponsorLogo src="/images/EdInn" name="The Edmonstone Inn" />
 
     </div>
   </div>
