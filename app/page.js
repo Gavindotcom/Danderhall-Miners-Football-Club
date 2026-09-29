@@ -262,24 +262,24 @@ export default function Home() {
   <div className="sponsor-slider">
     <div className="sponsor-track">
 
-      <SponsorLogo src="/images/CK.jpg" name="CK Coaching" />
-      <SponsorLogo src="/images/AR.JPG" name="AtkinsRealis" />
-      <SponsorLogo src="/images/Auto.jpg" name="Bold Autos Ltd" />
-      <SponsorLogo src="/images/City.png" name="City Plumbing" />
-      <SponsorLogo src="/images/Crowe.jpg" name="CROWE ECO HEATING" />
-      <SponsorLogo src="/images/EMF-logo.webp" name="Eskside Motor Factors" />
-      <SponsorLogo src="/images/Forth.jpg" name="Forth Scaffolding Ltd" />
-      <SponsorLogo src="/images/EdInn" name="The Edmonstone Inn" />
+<SponsorLogo src="/images/AR.jpg" name="AR" />
+<SponsorLogo src="/images/Auto.jpg" name="Auto" />
+<SponsorLogo src="/images/CK.jpg" name="CK" />
+<SponsorLogo src="/images/City.jpg" name="City" />
+<SponsorLogo src="/images/Crowe.jpg" name="Crowe" />
+<SponsorLogo src="/images/EMF-logo.webp" name="EMF" />
+<SponsorLogo src="/images/EdInn.jpg" name="Edinburgh Inn" />
+<SponsorLogo src="/images/Forth.jpg" name="Forth" />
 
-      {/* Duplicate set creates the continuous loop */}
-      <SponsorLogo src="/images/CK.jpg" name="CK Coaching" />
-      <SponsorLogo src="/images/AR.JPG" name="AtkinsRealis" />
-      <SponsorLogo src="/images/Auto.jpg" name="Bold Autos Ltd" />
-      <SponsorLogo src="/images/City.png" name="City Plumbing" />
-      <SponsorLogo src="/images/Crowe.jpg" name="CROWE ECO HEATING" />
-      <SponsorLogo src="/images/EMF-logo.webp" name="Eskside Motor Factors" />
-      <SponsorLogo src="/images/Forth.jpg" name="Forth Scaffolding Ltd" />
-      <SponsorLogo src="/images/EdInn" name="The Edmonstone Inn" />
+{/* Duplicate set for continuous scrolling */}
+<SponsorLogo src="/images/AR.jpg" name="AR" />
+<SponsorLogo src="/images/Auto.jpg" name="Auto" />
+<SponsorLogo src="/images/CK.jpg" name="CK" />
+<SponsorLogo src="/images/City.jpg" name="City" />
+<SponsorLogo src="/images/Crowe.jpg" name="Crowe" />
+<SponsorLogo src="/images/EMF-logo.webp" name="EMF" />
+<SponsorLogo src="/images/EdInn.jpg" name="Edinburgh Inn" />
+<SponsorLogo src="/images/Forth.jpg" name="Forth" />
 
     </div>
   </div>
