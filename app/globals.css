@@ -623,9 +623,9 @@ h2 {
 }
 
 .sponsor-logo {
-  width: 230px;
-  height: 100px;
-  padding: 15px 35px;
+  width: 300px;
+  height: 150px;
+  padding: 15px 30px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -634,20 +634,18 @@ h2 {
 
 .sponsor-logo img {
   max-width: 100%;
-  max-height: 70px;
+  max-height: 120px;
   width: auto;
   height: auto;
   object-fit: contain;
-  filter: grayscale(100%);
-  opacity: 0.75;
+  opacity: 1;
   transition: 0.25s ease;
 }
 
 .sponsor-logo img:hover {
-  filter: grayscale(0%);
-  opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
+
 
 .sponsor-slider:hover .sponsor-track {
   animation-play-state: paused;
@@ -663,16 +661,15 @@ h2 {
   }
 }
 
-@media (max-width: 720px) {
-  .sponsor-logo {
-    width: 170px;
-    height: 85px;
-    padding: 12px 25px;
-  }
+.sponsor-logo {
+  width: 220px;
+  height: 120px;
+  padding: 10px 20px;
+}
 
-  .sponsor-logo img {
-    max-height: 55px;
-  }
+.sponsor-logo img {
+  max-height: 95px;
+}
 
   .sponsor-track {
     animation-duration: 22s;
