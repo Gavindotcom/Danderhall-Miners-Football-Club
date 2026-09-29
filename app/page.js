@@ -253,7 +253,31 @@ export default function Home() {
           </div>
         </div>
       </section>
+{/* SPONSORS */}
+<section id="sponsors" className="sponsor-strip">
+  <div className="sponsor-heading">
+    <span>PROUDLY SUPPORTED BY</span>
+  </div>
 
+  <div className="sponsor-slider">
+    <div className="sponsor-track">
+
+      <SponsorLogo src="/images/sponsor-1.png" name="Sponsor 1" />
+      <SponsorLogo src="/images/sponsor-2.png" name="Sponsor 2" />
+      <SponsorLogo src="/images/sponsor-3.png" name="Sponsor 3" />
+      <SponsorLogo src="/images/sponsor-4.png" name="Sponsor 4" />
+      <SponsorLogo src="/images/sponsor-5.png" name="Sponsor 5" />
+
+      {/* Duplicate set creates the continuous loop */}
+      <SponsorLogo src="/images/sponsor-1.png" name="Sponsor 1" />
+      <SponsorLogo src="/images/sponsor-2.png" name="Sponsor 2" />
+      <SponsorLogo src="/images/sponsor-3.png" name="Sponsor 3" />
+      <SponsorLogo src="/images/sponsor-4.png" name="Sponsor 4" />
+      <SponsorLogo src="/images/sponsor-5.png" name="Sponsor 5" />
+
+    </div>
+  </div>
+</section>
       {/* FOOTER */}
       <footer id="contact">
         <div className="container footer-inner">
@@ -339,5 +363,12 @@ function NewsCard({ category, title, text }) {
         Read more <ArrowRight size={15} />
       </a>
     </article>
+  );
+}
+function SponsorLogo({ src, name }) {
+  return (
+    <div className="sponsor-logo">
+      <img src={src} alt={name} />
+    </div>
   );
 }
