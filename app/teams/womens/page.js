@@ -129,11 +129,13 @@ export default function WomensTeamPage() {
 
           <div className="womens-info-grid">
 
-            <InfoCard
-              icon={<Users />}
-              title="TEAM"
-              text="Danderhall Miners Women's Team"
-            />
+            <a href="/teams/womens/squad" className="womens-info-link">
+  <InfoCard
+    icon={<Users />}
+    title="TEAM"
+    text="Meet the Danderhall Miners Women's Team"
+  />
+</a>
 
             <InfoCard
               icon={<CalendarDays />}
