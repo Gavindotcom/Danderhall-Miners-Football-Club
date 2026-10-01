@@ -3,12 +3,13 @@ import { ArrowLeft } from "lucide-react";
 export const metadata = {
   title: "Women's Squad",
   description:
-    "Meet the players representing Danderhall Miners FC Women's Team.",
+    "Meet the players and staff representing Danderhall Miners FC Women's Team.",
 };
 
 const squad = {
   goalkeepers: [
     { number: "1", name: "PLAYER NAME", image: null },
+    { number: "13", name: "PLAYER NAME", image: null },
   ],
 
   defenders: [
@@ -31,6 +32,19 @@ const squad = {
     { number: "14", name: "PLAYER NAME", image: null },
   ],
 };
+
+const staff = [
+  {
+    role: "Manager / Head Coach",
+    name: "TO BE ADDED",
+    image: null,
+  },
+  {
+    role: "Coach",
+    name: "TO BE ADDED",
+    image: null,
+  },
+];
 
 export default function WomensSquadPage() {
   return (
@@ -67,59 +81,50 @@ export default function WomensSquadPage() {
       </header>
 
 
-      {/* HERO */}
-      <section className="squad-hero">
-        <div className="squad-hero-overlay" />
+      {/* SIMPLE PAGE HEADER */}
+      <section className="squad-page-header">
 
-        <div className="container squad-hero-content">
+        <div className="container">
 
-          <a href="/teams/womens" className="squad-back">
+          <a href="/teams/womens" className="squad-page-back">
             <ArrowLeft size={16} />
             Women's Team
           </a>
 
-          <p className="eyebrow">
+          <p className="squad-kicker">
             DANDERHALL MINERS FC
           </p>
 
-          <h1>THE SQUAD</h1>
-
-          <p>
-            Meet the players representing Danderhall Miners Football Club
-            Women's Team.
-          </p>
+          <h1>WOMEN'S TEAM</h1>
 
         </div>
+
       </section>
 
 
-      {/* SQUAD */}
-      <section className="squad-section">
+      {/* PLAYERS */}
+      <section className="squad-roster">
 
         <div className="container">
 
-          <SquadGroup
+          <PlayerSection
             title="GOALKEEPERS"
             players={squad.goalkeepers}
-            position="Goalkeeper"
           />
 
-          <SquadGroup
+          <PlayerSection
             title="DEFENDERS"
             players={squad.defenders}
-            position="Defender"
           />
 
-          <SquadGroup
+          <PlayerSection
             title="MIDFIELDERS"
             players={squad.midfielders}
-            position="Midfielder"
           />
 
-          <SquadGroup
+          <PlayerSection
             title="FORWARDS"
             players={squad.forwards}
-            position="Forward"
           />
 
         </div>
@@ -127,27 +132,25 @@ export default function WomensSquadPage() {
       </section>
 
 
-      {/* STAFF */}
-      <section className="squad-staff">
+      {/* COACHING STAFF */}
+      <section className="squad-coaches">
 
         <div className="container">
 
-          <div className="squad-section-heading">
-            <span>THE TEAM BEHIND THE TEAM</span>
+          <div className="squad-position-title">
             <h2>COACHING STAFF</h2>
           </div>
 
-          <div className="staff-grid">
+          <div className="hibs-player-grid">
 
-            <StaffCard
-              role="Manager / Head Coach"
-              name="TO BE ADDED"
-            />
+            {staff.map((member, index) => (
 
-            <StaffCard
-              role="Coach"
-              name="TO BE ADDED"
-            />
+              <StaffCard
+                key={index}
+                member={member}
+              />
+
+            ))}
 
           </div>
 
@@ -160,52 +163,22 @@ export default function WomensSquadPage() {
 }
 
 
-function SquadGroup({ title, players, position }) {
+function PlayerSection({ title, players }) {
   return (
-    <div className="squad-group">
+    <div className="squad-position-section">
 
-      <div className="squad-section-heading">
-        <span>WOMEN'S TEAM</span>
+      <div className="squad-position-title">
         <h2>{title}</h2>
       </div>
 
-      <div className="player-grid">
+      <div className="hibs-player-grid">
 
         {players.map((player, index) => (
 
-          <article
-            className="player-card"
+          <PlayerCard
             key={`${title}-${index}`}
-          >
-
-            <div className="player-photo">
-
-              {player.image ? (
-                <img
-                  src={player.image}
-                  alt={player.name}
-                />
-              ) : (
-                <div className="player-placeholder">
-                  <span>{player.number}</span>
-                </div>
-              )}
-
-              <div className="player-number">
-                {player.number}
-              </div>
-
-            </div>
-
-            <div className="player-details">
-
-              <span>{position}</span>
-
-              <h3>{player.name}</h3>
-
-            </div>
-
-          </article>
+            player={player}
+          />
 
         ))}
 
@@ -216,20 +189,89 @@ function SquadGroup({ title, players, position }) {
 }
 
 
-function StaffCard({ role, name }) {
+function PlayerCard({ player }) {
   return (
-    <article className="staff-card">
+    <article className="hibs-player-card">
 
-      <div className="staff-placeholder">
-        <img
-          src="/images/badge.png"
-          alt=""
-        />
+      <div className="hibs-player-image">
+
+        {player.image ? (
+
+          <img
+            src={player.image}
+            alt={player.name}
+          />
+
+        ) : (
+
+          <div className="hibs-player-placeholder">
+
+            <img
+              src="/images/badge.png"
+              alt=""
+            />
+
+          </div>
+
+        )}
+
+        <div className="hibs-player-gradient" />
+
+        <div className="hibs-player-info">
+
+          <span className="hibs-player-number">
+            {player.number}
+          </span>
+
+          <h3>{player.name}</h3>
+
+        </div>
+
       </div>
 
-      <div>
-        <span>{role}</span>
-        <h3>{name}</h3>
+    </article>
+  );
+}
+
+
+function StaffCard({ member }) {
+  return (
+    <article className="hibs-player-card">
+
+      <div className="hibs-player-image">
+
+        {member.image ? (
+
+          <img
+            src={member.image}
+            alt={member.name}
+          />
+
+        ) : (
+
+          <div className="hibs-player-placeholder">
+
+            <img
+              src="/images/badge.png"
+              alt=""
+            />
+
+          </div>
+
+        )}
+
+        <div className="hibs-player-gradient" />
+
+        <div className="hibs-player-info">
+
+          <span className="hibs-staff-role">
+            {member.role}
+          </span>
+
+          <h3>{member.name}</h3>
+
+        </div>
+
       </div>
 
     </article>
