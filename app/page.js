@@ -19,15 +19,15 @@ export default function Home() {
           </a>
 
           <nav className="desktop-nav">
-            <a className="active" href="#">Home</a>
-            <a href="#club">Our Club</a>
-            <a href="#teams">Teams</a>
-            <a href="#community">Community</a>
-            <a href="#facilities">Facilities</a>
-            <a href="#safeguarding">Safeguarding</a>
-            <a href="#sponsors">Sponsors</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
+           <a className="active" href="/">Home</a>
+<a href="/our-club">Our Club</a>
+<a href="/teams">Teams</a>
+<a href="/community">Community</a>
+<a href="/facilities">Facilities</a>
+<a href="/safeguarding">Safeguarding</a>
+<a href="/sponsors">Sponsors</a>
+<a href="/news">News</a>
+<a href="/contact">Contact</a>
           </nav>
 
           <a href="#contact" className="btn btn-yellow nav-button">
