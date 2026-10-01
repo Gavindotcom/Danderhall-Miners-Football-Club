@@ -1718,326 +1718,319 @@ footer {
   .womens-info-card {
     min-height: auto;
   }
-  /* =========================
+/* =========================
    WOMEN'S SQUAD PAGE
 ========================= */
 
-.squad-hero {
-  min-height: 460px;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.94) 0%,
-      rgba(0, 0, 0, 0.65) 50%,
-      rgba(0, 0, 0, 0.25) 100%
-    ),
-    url("/images/women.jpg") center 35% / cover no-repeat;
+/* PAGE HEADER */
+
+.squad-page-header {
+  padding: 75px 0 55px;
+  background: #ffffff;
+  color: #111111;
+  border-bottom: 1px solid #dddddd;
 }
 
-.squad-hero-overlay {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.75),
-      transparent 65%
-    );
-}
-
-.squad-hero-content {
-  position: relative;
-  z-index: 2;
-  padding-bottom: 55px;
-}
-
-.squad-back {
+.squad-page-back {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 35px;
-  color: #ffffff;
+  margin-bottom: 45px;
+  color: #555555;
   font-size: 12px;
   font-weight: 700;
 }
 
-.squad-back:hover {
-  color: var(--yellow);
+.squad-page-back:hover {
+  color: #111111;
 }
 
-.squad-hero h1 {
-  font-size: clamp(60px, 8vw, 105px);
-  line-height: 0.85;
+.squad-kicker {
+  margin-bottom: 10px;
+  color: #777777;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.squad-page-header h1 {
+  font-size: clamp(55px, 8vw, 100px);
+  line-height: 0.88;
   font-weight: 900;
   letter-spacing: -5px;
 }
 
-.squad-hero-content > p:last-child {
-  max-width: 600px;
-  margin-top: 22px;
-  color: #dddddd;
-  font-size: 16px;
-  line-height: 1.7;
-}
 
+/* MAIN ROSTER */
 
-/* SQUAD */
-
-.squad-section {
-  padding: 85px 0 100px;
-  background: #f4f4f2;
+.squad-roster {
+  padding: 80px 0 110px;
+  background: #f3f3f1;
   color: #111111;
 }
 
-.squad-group {
-  margin-bottom: 90px;
+.squad-position-section {
+  margin-bottom: 100px;
 }
 
-.squad-group:last-child {
+.squad-position-section:last-child {
   margin-bottom: 0;
 }
 
-.squad-section-heading {
+.squad-position-title {
   margin-bottom: 32px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #cfcfcb;
 }
 
-.squad-section-heading span {
-  display: block;
-  margin-bottom: 8px;
-  color: #777777;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
-
-.squad-section-heading h2 {
-  font-size: clamp(35px, 4vw, 52px);
+.squad-position-title h2 {
+  font-size: clamp(30px, 4vw, 48px);
   line-height: 1;
   font-weight: 900;
+  letter-spacing: -2px;
 }
 
 
 /* PLAYER GRID */
 
-.player-grid {
+.hibs-player-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 22px;
 }
 
-.player-card {
-  overflow: hidden;
-  background: #ffffff;
-  border-bottom: 5px solid var(--yellow);
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
+.hibs-player-card {
+  min-width: 0;
 }
 
-.player-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
-}
-
-.player-photo {
+.hibs-player-image {
   position: relative;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
   overflow: hidden;
-  background: #151515;
+  background: #111111;
 }
 
-.player-photo img {
+.hibs-player-image > img {
   width: 100%;
   height: 100%;
+  display: block;
   object-fit: cover;
   object-position: center top;
+  transition: transform 0.4s ease;
 }
 
-.player-placeholder {
-  width: 100%;
-  height: 100%;
+.hibs-player-card:hover .hibs-player-image > img {
+  transform: scale(1.025);
+}
+
+
+/* PLACEHOLDER UNTIL REAL PHOTOS ARE ADDED */
+
+.hibs-player-placeholder {
+  position: absolute;
+  inset: 0;
   display: grid;
   place-items: center;
   background:
     linear-gradient(
       145deg,
-      #1c1c1c,
-      #090909
+      #242424 0%,
+      #111111 60%,
+      #050505 100%
     );
 }
 
-.player-placeholder span {
-  color: rgba(255, 229, 0, 0.12);
-  font-size: 150px;
-  font-weight: 900;
+.hibs-player-placeholder::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border: 55px solid rgba(255, 229, 0, 0.05);
+  border-radius: 50%;
 }
 
-.player-number {
+.hibs-player-placeholder img {
+  position: relative;
+  z-index: 1;
+  width: 42%;
+  max-width: 130px;
+  opacity: 0.18;
+}
+
+
+/* IMAGE OVERLAY */
+
+.hibs-player-gradient {
   position: absolute;
-  left: 18px;
-  bottom: 12px;
+  inset: 0;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0.55) 27%,
+      transparent 58%
+    );
+  pointer-events: none;
+}
+
+
+/* PLAYER NAME + NUMBER */
+
+.hibs-player-info {
+  position: absolute;
+  z-index: 3;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+  color: #ffffff;
+}
+
+.hibs-player-number {
+  display: block;
+  margin-bottom: 5px;
   color: var(--yellow);
-  font-size: 50px;
+  font-size: 42px;
   line-height: 1;
   font-weight: 900;
+  letter-spacing: -2px;
 }
 
-.player-details {
-  padding: 22px 20px 25px;
+.hibs-player-info h3 {
+  max-width: 90%;
+  font-size: clamp(18px, 2vw, 25px);
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
 }
 
-.player-details span {
+
+/* YELLOW ACCENT */
+
+.hibs-player-card::after {
+  content: "";
   display: block;
-  margin-bottom: 7px;
-  color: #777777;
+  width: 100%;
+  height: 5px;
+  background: var(--yellow);
+}
+
+
+/* COACHING STAFF */
+
+.squad-coaches {
+  padding: 85px 0 100px;
+  background: #ffffff;
+  color: #111111;
+}
+
+.squad-coaches .hibs-player-grid {
+  max-width: 620px;
+}
+
+.hibs-staff-role {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--yellow);
   font-size: 10px;
-  font-weight: 800;
+  line-height: 1.2;
+  font-weight: 900;
   letter-spacing: 1.5px;
   text-transform: uppercase;
 }
 
-.player-details h3 {
-  font-size: 20px;
-  line-height: 1.1;
-  font-weight: 900;
+
+/* DESKTOP HOVER */
+
+@media (hover: hover) {
+
+  .hibs-player-card {
+    transition: transform 0.25s ease;
+  }
+
+  .hibs-player-card:hover {
+    transform: translateY(-5px);
+  }
+
 }
 
 
-/* STAFF */
-
-.squad-staff {
-  padding: 85px 0 95px;
-  background: #080808;
-}
-
-.squad-staff .squad-section-heading span {
-  color: var(--yellow);
-}
-
-.staff-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.staff-card {
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  padding: 25px;
-  background: #161616;
-  border-top: 4px solid var(--yellow);
-}
-
-.staff-placeholder {
-  width: 80px;
-  height: 80px;
-  flex-shrink: 0;
-  display: grid;
-  place-items: center;
-  background: #0a0a0a;
-}
-
-.staff-placeholder img {
-  max-width: 58px;
-  max-height: 58px;
-  opacity: 0.4;
-}
-
-.staff-card span {
-  display: block;
-  margin-bottom: 7px;
-  color: var(--yellow);
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.staff-card h3 {
-  font-size: 18px;
-  font-weight: 900;
-}
-
-
-/* RESPONSIVE */
+/* TABLET */
 
 @media (max-width: 1000px) {
 
-  .player-grid {
+  .hibs-player-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
 }
 
+
+/* SMALL TABLET */
+
 @media (max-width: 750px) {
 
-  .player-grid {
+  .hibs-player-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
   }
 
-  .staff-grid {
-    grid-template-columns: 1fr;
+  .squad-position-section {
+    margin-bottom: 70px;
   }
 
 }
+
+
+/* MOBILE */
 
 @media (max-width: 500px) {
 
-  .squad-hero {
-    min-height: 400px;
+  .squad-page-header {
+    padding: 50px 0 40px;
   }
 
-  .squad-hero h1 {
-    font-size: 58px;
+  .squad-page-back {
+    margin-bottom: 35px;
+  }
+
+  .squad-page-header h1 {
+    font-size: 52px;
     letter-spacing: -3px;
   }
 
-  .squad-section {
-    padding: 60px 0 70px;
+  .squad-roster {
+    padding: 55px 0 70px;
   }
 
-  .squad-group {
-    margin-bottom: 65px;
+  .squad-position-title {
+    margin-bottom: 20px;
   }
 
-  .player-grid {
-    gap: 12px;
+  .squad-position-title h2 {
+    font-size: 30px;
   }
 
-  .player-details {
-    padding: 16px 13px 18px;
+  .hibs-player-grid {
+    gap: 10px;
   }
 
-  .player-details h3 {
-    font-size: 16px;
+  .hibs-player-info {
+    left: 14px;
+    right: 14px;
+    bottom: 15px;
   }
 
-  .player-number {
-    left: 12px;
-    bottom: 10px;
-    font-size: 38px;
+  .hibs-player-number {
+    font-size: 32px;
   }
 
-}
-}
-.womens-info-link {
-  display: block;
-  color: inherit;
-}
+  .hibs-player-info h3 {
+    font-size: 15px;
+  }
 
-.womens-info-link .womens-info-card {
-  height: 100%;
-  cursor: pointer;
-  transition:
-    transform 0.25s ease,
-    background 0.25s ease;
-}
+  .squad-coaches {
+    padding: 55px 0 70px;
+  }
 
-.womens-info-link:hover .womens-info-card {
-  transform: translateY(-6px);
-  background: #202020;
 }
