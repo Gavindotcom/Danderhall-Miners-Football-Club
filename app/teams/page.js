@@ -127,7 +127,7 @@ export default function TeamsPage() {
             <article
               className="directory-team-card"
               style={{
-                backgroundImage: `url("/images/womens.jpg")`,
+                backgroundImage: `url("/images/women.jpg")`,
               }}
             >
 
