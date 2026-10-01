@@ -1719,3 +1719,20 @@ footer {
     min-height: auto;
   }
 }
+.womens-info-link {
+  display: block;
+  color: inherit;
+}
+
+.womens-info-link .womens-info-card {
+  height: 100%;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.womens-info-link:hover .womens-info-card {
+  transform: translateY(-6px);
+  background: #202020;
+}
