@@ -5,13 +5,6 @@ import {
   ShieldCheck,
   ArrowRight,
 } from "lucide-react";
-import {
-  Users,
-  Heart,
-  TrendingUp,
-  ShieldCheck,
-  ArrowRight,
-} from "lucide-react";
 
 export const metadata = {
   title: "Our Club",
