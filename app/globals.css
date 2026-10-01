@@ -1718,6 +1718,311 @@ footer {
   .womens-info-card {
     min-height: auto;
   }
+  /* =========================
+   WOMEN'S SQUAD PAGE
+========================= */
+
+.squad-hero {
+  min-height: 460px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.65) 50%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    url("/images/women.jpg") center 35% / cover no-repeat;
+}
+
+.squad-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.75),
+      transparent 65%
+    );
+}
+
+.squad-hero-content {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 55px;
+}
+
+.squad-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 35px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.squad-back:hover {
+  color: var(--yellow);
+}
+
+.squad-hero h1 {
+  font-size: clamp(60px, 8vw, 105px);
+  line-height: 0.85;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+
+.squad-hero-content > p:last-child {
+  max-width: 600px;
+  margin-top: 22px;
+  color: #dddddd;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* SQUAD */
+
+.squad-section {
+  padding: 85px 0 100px;
+  background: #f4f4f2;
+  color: #111111;
+}
+
+.squad-group {
+  margin-bottom: 90px;
+}
+
+.squad-group:last-child {
+  margin-bottom: 0;
+}
+
+.squad-section-heading {
+  margin-bottom: 32px;
+}
+
+.squad-section-heading span {
+  display: block;
+  margin-bottom: 8px;
+  color: #777777;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.squad-section-heading h2 {
+  font-size: clamp(35px, 4vw, 52px);
+  line-height: 1;
+  font-weight: 900;
+}
+
+
+/* PLAYER GRID */
+
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.player-card {
+  overflow: hidden;
+  background: #ffffff;
+  border-bottom: 5px solid var(--yellow);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+.player-photo {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #151515;
+}
+
+.player-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.player-placeholder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(
+      145deg,
+      #1c1c1c,
+      #090909
+    );
+}
+
+.player-placeholder span {
+  color: rgba(255, 229, 0, 0.12);
+  font-size: 150px;
+  font-weight: 900;
+}
+
+.player-number {
+  position: absolute;
+  left: 18px;
+  bottom: 12px;
+  color: var(--yellow);
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.player-details {
+  padding: 22px 20px 25px;
+}
+
+.player-details span {
+  display: block;
+  margin-bottom: 7px;
+  color: #777777;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.player-details h3 {
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+
+/* STAFF */
+
+.squad-staff {
+  padding: 85px 0 95px;
+  background: #080808;
+}
+
+.squad-staff .squad-section-heading span {
+  color: var(--yellow);
+}
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.staff-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 25px;
+  background: #161616;
+  border-top: 4px solid var(--yellow);
+}
+
+.staff-placeholder {
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: #0a0a0a;
+}
+
+.staff-placeholder img {
+  max-width: 58px;
+  max-height: 58px;
+  opacity: 0.4;
+}
+
+.staff-card span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--yellow);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.staff-card h3 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+  .player-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .player-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .staff-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .squad-hero {
+    min-height: 400px;
+  }
+
+  .squad-hero h1 {
+    font-size: 58px;
+    letter-spacing: -3px;
+  }
+
+  .squad-section {
+    padding: 60px 0 70px;
+  }
+
+  .squad-group {
+    margin-bottom: 65px;
+  }
+
+  .player-grid {
+    gap: 12px;
+  }
+
+  .player-details {
+    padding: 16px 13px 18px;
+  }
+
+  .player-details h3 {
+    font-size: 16px;
+  }
+
+  .player-number {
+    left: 12px;
+    bottom: 10px;
+    font-size: 38px;
+  }
+
+}
 }
 .womens-info-link {
   display: block;
