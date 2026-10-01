@@ -86,9 +86,9 @@ export default function Home() {
               ages and abilities.
             </p>
 
-            <a href="#" className="btn btn-yellow">
-              About Us <ArrowRight size={17} />
-            </a>
+            <a href="/our-club" className="btn btn-yellow">
+  About Us <ArrowRight size={17} />
+</a>
           </div>
 
           <div className="values">
