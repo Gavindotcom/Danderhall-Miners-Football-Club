@@ -129,8 +129,8 @@ export default function Home() {
               Danderhall.
             </p>
 
-            <a href="/teams" className="btn btn-outline">
-  Our Teams
+            <a href="/teams" className="btn btn-yellow">
+  View All Teams <ArrowRight size={17} />
 </a>
           </div>
 
