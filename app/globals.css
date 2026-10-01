@@ -1489,3 +1489,233 @@ footer {
     padding: 35px 0;
   }
 }
+/* =========================
+   WOMEN'S TEAM PAGE
+========================= */
+
+.womens-hero {
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.93) 0%,
+      rgba(0, 0, 0, 0.67) 45%,
+      rgba(0, 0, 0, 0.18) 100%
+    ),
+    url("/images/women.jpg") center / cover no-repeat;
+}
+
+.womens-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.45),
+      transparent 55%
+    );
+}
+
+.womens-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.womens-hero h1 {
+  font-size: clamp(65px, 9vw, 115px);
+  line-height: 0.8;
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+
+.womens-hero-content > p:not(.eyebrow) {
+  max-width: 580px;
+  margin-top: 30px;
+  color: #eeeeee;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.womens-hero .btn {
+  margin-top: 28px;
+}
+
+
+/* INTRO */
+
+.womens-intro {
+  padding: 90px 0;
+  background: #f4f4f2;
+  color: #111111;
+}
+
+.womens-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+}
+
+.womens-intro h2 {
+  font-size: clamp(40px, 5vw, 62px);
+}
+
+.womens-intro-copy {
+  color: #444444;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.womens-intro-copy p {
+  margin-bottom: 20px;
+}
+
+
+/* TEAM INFO */
+
+.womens-info {
+  padding: 85px 0 95px;
+  background: #080808;
+}
+
+.womens-info-heading {
+  margin-bottom: 40px;
+}
+
+.womens-info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.womens-info-card {
+  min-height: 230px;
+  padding: 30px;
+  background: #151515;
+  border-top: 4px solid var(--yellow);
+}
+
+.womens-info-icon {
+  margin-bottom: 28px;
+  color: var(--yellow);
+}
+
+.womens-info-icon svg {
+  width: 38px;
+  height: 38px;
+}
+
+.womens-info-card h3 {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.womens-info-card p {
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* JOIN */
+
+.womens-join {
+  padding: 90px 0;
+  background: var(--yellow);
+  color: #111111;
+}
+
+.womens-join-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 100px;
+}
+
+.womens-join h2 {
+  font-size: clamp(42px, 5vw, 65px);
+}
+
+.womens-join .section-label::before {
+  background: #111111;
+}
+
+.womens-join-copy {
+  max-width: 650px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.womens-join-copy p {
+  margin-bottom: 18px;
+}
+
+.womens-join .btn-yellow {
+  margin-top: 10px;
+  background: #111111;
+  color: #ffffff;
+}
+
+.womens-join .btn-yellow:hover {
+  background: #292929;
+}
+
+
+/* BACK TO TEAMS */
+
+.back-to-teams {
+  padding: 30px 0;
+  background: #080808;
+}
+
+.back-to-teams a {
+  color: var(--yellow);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .womens-intro-grid,
+  .womens-join-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .womens-info-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .womens-hero {
+    min-height: 520px;
+    background-position: center;
+  }
+
+  .womens-hero h1 {
+    font-size: 62px;
+    letter-spacing: -4px;
+  }
+
+  .womens-intro,
+  .womens-info,
+  .womens-join {
+    padding: 60px 0;
+  }
+
+  .womens-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .womens-info-card {
+    min-height: auto;
+  }
+}
