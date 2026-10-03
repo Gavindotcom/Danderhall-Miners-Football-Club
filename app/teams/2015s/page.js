@@ -150,19 +150,19 @@ export default function Team2015sPage() {
 
   <YouthInfoCard
     icon={<Users />}
-    title="MARADONA"
+    title="MARADONA - COMING SOON"
     text="Danderhall Miners 2015s"
   />
 
   <YouthInfoCard
     icon={<Users />}
-    title="ZIDANE"
+    title="ZIDANE - COMING SOON"
     text="Danderhall Miners 2015s"
   />
 
   <YouthInfoCard
     icon={<Users />}
-    title="BECKHAM"
+    title="BECKHAM COMING SOON"
     text="Danderhall Miners 2015s"
   />
 
