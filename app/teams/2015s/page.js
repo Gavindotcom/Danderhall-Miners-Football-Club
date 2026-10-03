@@ -150,20 +150,20 @@ export default function Team2015sPage() {
 
   <YouthInfoCard
     icon={<Users />}
-    title="MARADONA - COMING SOON"
-    text="Danderhall Miners 2015s"
+    title="MARADONA"
+    text="Coming Soon"
   />
 
   <YouthInfoCard
     icon={<Users />}
-    title="ZIDANE - COMING SOON"
-    text="Danderhall Miners 2015s"
+    title="ZIDANE 
+    text="Coming Soon"
   />
 
   <YouthInfoCard
     icon={<Users />}
-    title="BECKHAM COMING SOON"
-    text="Danderhall Miners 2015s"
+    title="BECKHAM"
+    text="Coming Soon"
   />
 
 </div>
