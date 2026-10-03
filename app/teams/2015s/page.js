@@ -128,17 +128,25 @@ export default function Team2015sPage() {
 
 <div className="youth-info-grid youth-squads-grid">
 
+  <a href="/teams/2015s/pele" className="youth-team-card-link">
+
   <YouthInfoCard
     icon={<Users />}
     title="PELÉ"
-    text="Danderhall Miners 2015s"
+    text="View Team"
   />
+
+</a>
+
+   <a href="/teams/2015s/iniesta" className="youth-team-card-link">
 
   <YouthInfoCard
     icon={<Users />}
     title="INIESTA"
-    text="Danderhall Miners 2015s"
+    text="View Team"
   />
+
+</a>
 
   <YouthInfoCard
     icon={<Users />}
