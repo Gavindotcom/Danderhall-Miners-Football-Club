@@ -2321,3 +2321,30 @@ footer {
     font-size: 16px;
   }
 }
+/* 2015s SQUAD CARDS */
+
+.youth-squads-grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.youth-squads-grid .youth-info-card {
+  min-height: 220px;
+}
+
+@media (max-width: 1000px) {
+  .youth-squads-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .youth-squads-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .youth-squads-grid {
+    grid-template-columns: 1fr;
+  }
+}
