@@ -4414,3 +4414,511 @@ footer {
   }
 
 }
+/* =========================
+   SPONSORS PAGE
+========================= */
+
+/* HERO */
+
+.sponsors-page-hero {
+  min-height: 620px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.95) 0%,
+      rgba(0, 0, 0, 0.72) 50%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url("/images/hero.png") center / cover no-repeat;
+}
+
+.sponsors-page-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.sponsors-page-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+}
+
+.sponsors-page-hero-content > svg {
+  margin-bottom: 18px;
+  color: var(--yellow);
+}
+
+.sponsors-page-hero-content h1 {
+  margin: 8px 0 22px;
+  color: #ffffff;
+  font-size: clamp(54px, 7vw, 96px);
+  line-height: 0.9;
+  letter-spacing: -3px;
+}
+
+.sponsors-page-hero-content > p:not(.eyebrow) {
+  max-width: 620px;
+  margin-bottom: 30px;
+  color: #d5d5d5;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* INTRO */
+
+.sponsors-intro {
+  padding: 105px 0;
+  background: #ffffff;
+  color: #111111;
+}
+
+.sponsors-intro-grid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 90px;
+}
+
+.sponsors-intro h2 {
+  margin-top: 8px;
+  font-size: clamp(48px, 6vw, 78px);
+  line-height: 0.92;
+  letter-spacing: -2px;
+}
+
+.sponsors-intro-copy {
+  max-width: 680px;
+}
+
+.sponsors-intro-copy p {
+  margin-bottom: 20px;
+  color: #555555;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.sponsors-intro-copy p:first-child {
+  color: #111111;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+
+/* SPONSOR DIRECTORY */
+
+.sponsors-directory {
+  padding: 100px 0 115px;
+  background: #0b0b0b;
+}
+
+.sponsors-directory-heading {
+  max-width: 720px;
+  margin-bottom: 50px;
+}
+
+.sponsors-directory-heading h2 {
+  margin: 8px 0 15px;
+  color: #ffffff;
+  font-size: clamp(46px, 6vw, 76px);
+  line-height: 0.92;
+  letter-spacing: -2px;
+}
+
+.sponsors-directory-heading > p:last-child {
+  color: #aaaaaa;
+  line-height: 1.7;
+}
+
+.sponsors-page-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.sponsors-page-card {
+  min-height: 230px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.sponsors-page-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+}
+
+.sponsors-page-card img {
+  display: block;
+  max-width: 100%;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* PARTNER WITH US */
+
+.sponsors-partner {
+  padding: 105px 0 115px;
+  background: #f3f3f1;
+  color: #111111;
+}
+
+.sponsors-partner-heading {
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+
+.sponsors-partner-heading h2 {
+  margin: 8px 0 20px;
+  font-size: clamp(46px, 6vw, 76px);
+  line-height: 0.92;
+  letter-spacing: -2px;
+}
+
+.sponsors-partner-heading > p:last-child {
+  max-width: 680px;
+  color: #555555;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.sponsors-benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.sponsors-benefit-card {
+  min-height: 300px;
+  padding: 32px 28px;
+  background: #ffffff;
+  border-top: 4px solid var(--yellow);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.sponsors-benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.08);
+}
+
+.sponsors-benefit-icon {
+  width: 52px;
+  height: 52px;
+  margin-bottom: 35px;
+  display: grid;
+  place-items: center;
+  background: var(--yellow);
+  color: #111111;
+}
+
+.sponsors-benefit-card h3 {
+  margin-bottom: 12px;
+  font-size: 21px;
+}
+
+.sponsors-benefit-card p {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* OPPORTUNITIES */
+
+.sponsors-opportunities {
+  padding: 110px 0;
+  background: #111111;
+}
+
+.sponsors-opportunities-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: start;
+}
+
+.sponsors-opportunities h2 {
+  margin: 8px 0 20px;
+  color: #ffffff;
+  font-size: clamp(46px, 6vw, 74px);
+  line-height: 0.92;
+  letter-spacing: -2px;
+}
+
+.sponsors-opportunities-grid > div:first-child > p:last-child {
+  max-width: 560px;
+  color: #aaaaaa;
+  line-height: 1.7;
+}
+
+.sponsors-opportunity-list {
+  border-top: 1px solid #333333;
+}
+
+.sponsors-opportunity {
+  min-height: 85px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  border-bottom: 1px solid #333333;
+  transition:
+    padding-left 0.25s ease,
+    background 0.25s ease;
+}
+
+.sponsors-opportunity:hover {
+  padding-left: 12px;
+  background: #181818;
+}
+
+.sponsors-opportunity span {
+  color: var(--yellow);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.sponsors-opportunity strong {
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+
+/* FINAL CTA */
+
+.sponsors-final {
+  padding: 80px 0;
+  background: var(--yellow);
+  color: #111111;
+}
+
+.sponsors-final-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.sponsors-final-inner > div {
+  max-width: 760px;
+}
+
+.sponsors-final h2 {
+  margin: 7px 0 12px;
+  font-size: clamp(40px, 5vw, 60px);
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.sponsors-final p:last-child {
+  max-width: 650px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   SPONSORS - TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+  .sponsors-intro-grid,
+  .sponsors-opportunities-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .sponsors-page-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sponsors-benefit-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* =========================
+   SPONSORS - MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  /* HERO */
+
+  .sponsors-page-hero {
+    min-height: 570px;
+  }
+
+  .sponsors-page-hero-content h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  .sponsors-page-hero-content > p:not(.eyebrow) {
+    font-size: 15px;
+  }
+
+
+  /* INTRO */
+
+  .sponsors-intro {
+    padding: 70px 0;
+  }
+
+  .sponsors-intro h2 {
+    font-size: 44px;
+  }
+
+  .sponsors-intro-copy p {
+    font-size: 15px;
+  }
+
+  .sponsors-intro-copy p:first-child {
+    font-size: 19px;
+  }
+
+
+  /* SPONSORS */
+
+  .sponsors-directory {
+    padding: 70px 0;
+  }
+
+  .sponsors-directory-heading {
+    margin-bottom: 30px;
+  }
+
+  .sponsors-directory-heading h2 {
+    font-size: 44px;
+  }
+
+  .sponsors-page-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .sponsors-page-card {
+    min-height: 160px;
+    padding: 20px;
+  }
+
+  .sponsors-page-card img {
+    max-height: 105px;
+  }
+
+
+  /* PARTNER */
+
+  .sponsors-partner {
+    padding: 70px 0;
+  }
+
+  .sponsors-partner-heading {
+    margin-bottom: 35px;
+  }
+
+  .sponsors-partner-heading h2 {
+    font-size: 42px;
+  }
+
+  .sponsors-benefit-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .sponsors-benefit-card {
+    min-height: auto;
+    padding: 27px 24px;
+  }
+
+  .sponsors-benefit-icon {
+    margin-bottom: 22px;
+  }
+
+
+  /* OPPORTUNITIES */
+
+  .sponsors-opportunities {
+    padding: 75px 0;
+  }
+
+  .sponsors-opportunities h2 {
+    font-size: 43px;
+  }
+
+  .sponsors-opportunity {
+    min-height: 75px;
+    gap: 18px;
+  }
+
+  .sponsors-opportunity strong {
+    font-size: 15px;
+  }
+
+
+  /* FINAL */
+
+  .sponsors-final {
+    padding: 65px 0;
+  }
+
+  .sponsors-final-inner {
+    display: block;
+  }
+
+  .sponsors-final h2 {
+    font-size: 40px;
+  }
+
+  .sponsors-final-inner .btn {
+    margin-top: 25px;
+  }
+
+}
+
+
+/* =========================
+   SPONSORS - SMALL MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+  .sponsors-page-hero-content h1 {
+    font-size: 42px;
+  }
+
+  .sponsors-page-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sponsors-page-card {
+    min-height: 140px;
+    padding: 15px;
+  }
+
+  .sponsors-page-card img {
+    max-height: 90px;
+  }
+
+  .sponsors-partner-heading h2,
+  .sponsors-opportunities h2 {
+    font-size: 38px;
+  }
+
+}
