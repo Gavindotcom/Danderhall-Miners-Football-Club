@@ -3157,3 +3157,36 @@ footer {
   }
 
 }
+/* =========================
+   COMMUNITY STORY - MOBILE
+   Keep journey horizontal
+========================= */
+
+@media (max-width: 700px) {
+
+  .community-story-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 5px;
+    padding: 22px 8px;
+    width: 100%;
+  }
+
+  .community-story-item {
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+
+  .community-story-arrow {
+    flex-shrink: 0;
+    font-size: 11px;
+    width: auto;
+    margin: 0 1px;
+  }
+
+}
