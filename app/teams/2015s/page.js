@@ -126,33 +126,39 @@ export default function Team2015sPage() {
             <h2>AT A GLANCE</h2>
           </div>
 
-          <div className="youth-info-grid">
+<div className="youth-info-grid youth-squads-grid">
 
-            <YouthInfoCard
-              icon={<Users />}
-              title="TEAM"
-              text="Danderhall Miners 2015s"
-            />
+  <YouthInfoCard
+    icon={<Users />}
+    title="PELÉ"
+    text="Danderhall Miners 2015s"
+  />
 
-            <YouthInfoCard
-              icon={<CalendarDays />}
-              title="TRAINING"
-              text="Tuesday & Thursday"
-            />
+  <YouthInfoCard
+    icon={<Users />}
+    title="INIESTA"
+    text="Danderhall Miners 2015s"
+  />
 
-            <YouthInfoCard
-              icon={<MapPin />}
-              title="HOME"
-              text="Danderhall"
-            />
+  <YouthInfoCard
+    icon={<Users />}
+    title="MARADONA"
+    text="Danderhall Miners 2015s"
+  />
 
-            <YouthInfoCard
-              icon={<Trophy />}
-              title="MATCHDAYS"
-              text="Saturday"
-            />
+  <YouthInfoCard
+    icon={<Users />}
+    title="ZIDANE"
+    text="Danderhall Miners 2015s"
+  />
 
-          </div>
+  <YouthInfoCard
+    icon={<Users />}
+    title="BECKHAM"
+    text="Danderhall Miners 2015s"
+  />
+
+</div>
 
         </div>
 
