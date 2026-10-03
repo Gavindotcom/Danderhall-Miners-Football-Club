@@ -13,7 +13,7 @@ export default function Home() {
     <main>
 
       {/* NAVIGATION */}
-     <Header />
+      <Header />
 
       {/* HERO */}
       <section className="hero">
@@ -35,11 +35,11 @@ export default function Home() {
           </p>
 
           <div className="hero-buttons">
-            <a href="#club" className="btn btn-yellow">
+            <a href="/our-club" className="btn btn-yellow">
               Our Club <ArrowRight size={17} />
             </a>
 
-            <a href="#teams" className="btn btn-outline">
+            <a href="/teams" className="btn btn-outline">
               Our Teams
             </a>
           </div>
@@ -66,8 +66,8 @@ export default function Home() {
             </p>
 
             <a href="/our-club" className="btn btn-yellow">
-  About Us <ArrowRight size={17} />
-</a>
+              About Us <ArrowRight size={17} />
+            </a>
           </div>
 
           <div className="values">
@@ -109,25 +109,28 @@ export default function Home() {
             </p>
 
             <a href="/teams" className="btn btn-yellow">
-  View All Teams <ArrowRight size={17} />
-</a>
+              View All Teams <ArrowRight size={17} />
+            </a>
           </div>
 
           <div className="team-cards">
             <TeamCard
               title="Women's Team"
               image="/images/women.jpg"
+              href="/teams/womens"
             />
 
             <TeamCard
               title="2015s"
               image="/images/2015.jpg"
+              href="/teams/2015s"
             />
 
             <TeamCard
               title="Future Teams"
               subtitle="Growing our club"
               image="/images/future.jpg"
+              href="/teams"
             />
           </div>
         </div>
@@ -135,9 +138,11 @@ export default function Home() {
 
       {/* COMMUNITY + FACILITIES */}
       <section className="split-section">
+
         <div id="community" className="split-panel community-panel">
           <div className="split-content">
             <p className="section-label">COMMUNITY</p>
+
             <h2>STRONGER TOGETHER</h2>
 
             <p>
@@ -146,7 +151,7 @@ export default function Home() {
               initiatives.
             </p>
 
-            <a href="#" className="btn btn-yellow">
+            <a href="/community" className="btn btn-yellow">
               Our Community <ArrowRight size={17} />
             </a>
           </div>
@@ -155,6 +160,7 @@ export default function Home() {
         <div id="facilities" className="split-panel facilities-panel">
           <div className="split-content">
             <p className="section-label">FACILITIES</p>
+
             <h2>A HOME FOR THE FUTURE</h2>
 
             <p>
@@ -163,111 +169,132 @@ export default function Home() {
               community.
             </p>
 
-            <a href="#" className="btn btn-yellow">
+            <a href="/facilities" className="btn btn-yellow">
               Our Facilities <ArrowRight size={17} />
             </a>
           </div>
         </div>
+
       </section>
 
       {/* QUICK LINKS */}
       <section className="quick-links">
+
         <QuickLink
           icon={<ShieldCheck />}
           title="SAFEGUARDING"
           text="Creating a safe and supportive environment for all."
+          href="/safeguarding"
         />
 
         <QuickLink
           icon={<Users />}
           title="GET INVOLVED"
           text="Players, coaches, volunteers and supporters all play a part."
+          href="/contact"
         />
 
         <QuickLink
           icon={<Handshake />}
           title="SPONSORS"
           text="Partner with us and support our community."
+          href="/sponsors"
         />
 
         <QuickLink
           icon={<Newspaper />}
           title="LATEST NEWS"
           text="Keep up to date with club news, fixtures and events."
+          href="/news"
         />
+
       </section>
 
       {/* NEWS */}
       <section id="news" className="news-section">
         <div className="container">
+
           <div className="news-heading">
             <div>
               <p className="section-label">LATEST NEWS</p>
               <h2>FROM THE CLUB</h2>
             </div>
 
-            <a href="#">
+            <a href="/news">
               View All News <ArrowRight size={17} />
             </a>
           </div>
 
           <div className="news-grid">
+
             <NewsCard
               category="CLUB NEWS"
               title="Building the Future of Danderhall Miners FC"
               text="An exciting new chapter for our football club and community."
+              href="/news"
             />
 
             <NewsCard
               category="COMMUNITY"
               title="Our Community Vision"
               text="Football can make a difference far beyond the pitch."
+              href="/community"
             />
 
             <NewsCard
               category="YOUTH"
               title="Growing Our Youth Section"
               text="Creating more opportunities for young players in Danderhall."
+              href="/teams"
             />
+
           </div>
         </div>
       </section>
-{/* SPONSORS */}
-<section id="sponsors" className="sponsor-strip">
-  <div className="sponsor-heading">
-    <span>PROUDLY SUPPORTED BY</span>
-  </div>
 
-  <div className="sponsor-slider">
-    <div className="sponsor-track">
+      {/* SPONSORS */}
+      <section id="sponsors" className="sponsor-strip">
 
-<SponsorLogo src="/images/AR.jpg" name="AR" />
-<SponsorLogo src="/images/Auto.jpg" name="Auto" />
-<SponsorLogo src="/images/CK.jpg" name="CK" />
-<SponsorLogo src="/images/City.jpg" name="City" />
-<SponsorLogo src="/images/Crowe.jpg" name="Crowe" />
-<SponsorLogo src="/images/EMF-logo.webp" name="EMF" />
-<SponsorLogo src="/images/EdInn.jpg" name="Edinburgh Inn" />
-<SponsorLogo src="/images/Forth.jpg" name="Forth" />
+        <div className="sponsor-heading">
+          <span>PROUDLY SUPPORTED BY</span>
+        </div>
 
-{/* Duplicate set for continuous scrolling */}
-<SponsorLogo src="/images/AR.jpg" name="AR" />
-<SponsorLogo src="/images/Auto.jpg" name="Auto" />
-<SponsorLogo src="/images/CK.jpg" name="CK" />
-<SponsorLogo src="/images/City.jpg" name="City" />
-<SponsorLogo src="/images/Crowe.jpg" name="Crowe" />
-<SponsorLogo src="/images/EMF-logo.webp" name="EMF" />
-<SponsorLogo src="/images/EdInn.jpg" name="Edinburgh Inn" />
-<SponsorLogo src="/images/Forth.jpg" name="Forth" />
+        <div className="sponsor-slider">
+          <div className="sponsor-track">
 
-    </div>
-  </div>
-</section>
+            <SponsorLogo src="/images/AR.jpg" name="AR" />
+            <SponsorLogo src="/images/Auto.jpg" name="Auto" />
+            <SponsorLogo src="/images/CK.jpg" name="CK" />
+            <SponsorLogo src="/images/City.jpg" name="City" />
+            <SponsorLogo src="/images/Crowe.jpg" name="Crowe" />
+            <SponsorLogo src="/images/EMF-logo.webp" name="EMF" />
+            <SponsorLogo src="/images/EdInn.jpg" name="Edinburgh Inn" />
+            <SponsorLogo src="/images/Forth.jpg" name="Forth" />
+
+            {/* Duplicate set for continuous scrolling */}
+            <SponsorLogo src="/images/AR.jpg" name="AR" />
+            <SponsorLogo src="/images/Auto.jpg" name="Auto" />
+            <SponsorLogo src="/images/CK.jpg" name="CK" />
+            <SponsorLogo src="/images/City.jpg" name="City" />
+            <SponsorLogo src="/images/Crowe.jpg" name="Crowe" />
+            <SponsorLogo src="/images/EMF-logo.webp" name="EMF" />
+            <SponsorLogo src="/images/EdInn.jpg" name="Edinburgh Inn" />
+            <SponsorLogo src="/images/Forth.jpg" name="Forth" />
+
+          </div>
+        </div>
+
+      </section>
+
       {/* FOOTER */}
       <footer id="contact">
         <div className="container footer-inner">
+
           <div className="footer-brand">
-            <img src="/images/badge.png" alt="" />
+            <img
+              src="/images/badge.png"
+              alt="Danderhall Miners Football Club"
+            />
 
             <div>
               <strong>DANDERHALL MINERS</strong>
@@ -282,6 +309,7 @@ export default function Home() {
           <p className="copyright">
             © 2026 Danderhall Miners Football Club
           </p>
+
         </div>
       </footer>
 
@@ -289,10 +317,16 @@ export default function Home() {
   );
 }
 
+
+/* =========================
+   VALUES
+========================= */
+
 function Value({ icon, title, text }) {
   return (
     <div className="value">
       <div className="value-icon">{icon}</div>
+
       <div>
         <strong>{title}</strong>
         <p>{text}</p>
@@ -301,9 +335,15 @@ function Value({ icon, title, text }) {
   );
 }
 
-function TeamCard({ title, subtitle, image }) {
+
+/* =========================
+   TEAM CARDS
+========================= */
+
+function TeamCard({ title, subtitle, image, href }) {
   return (
-    <article
+    <a
+      href={href}
       className="team-card"
       style={{ backgroundImage: `url(${image})` }}
     >
@@ -319,37 +359,57 @@ function TeamCard({ title, subtitle, image }) {
           <ArrowRight size={18} />
         </span>
       </div>
-    </article>
+    </a>
   );
 }
 
-function QuickLink({ icon, title, text }) {
+
+/* =========================
+   QUICK LINKS
+========================= */
+
+function QuickLink({ icon, title, text, href }) {
   return (
     <div className="quick-link">
       {icon}
+
       <h3>{title}</h3>
+
       <p>{text}</p>
 
-      <a href="#">
+      <a href={href}>
         Find out more <ArrowRight size={15} />
       </a>
     </div>
   );
 }
 
-function NewsCard({ category, title, text }) {
+
+/* =========================
+   NEWS CARDS
+========================= */
+
+function NewsCard({ category, title, text, href }) {
   return (
     <article className="news-card">
       <span>{category}</span>
+
       <h3>{title}</h3>
+
       <p>{text}</p>
 
-      <a href="#">
+      <a href={href}>
         Read more <ArrowRight size={15} />
       </a>
     </article>
   );
 }
+
+
+/* =========================
+   SPONSOR LOGOS
+========================= */
+
 function SponsorLogo({ src, name }) {
   return (
     <div className="sponsor-logo">
