@@ -156,7 +156,7 @@ export default function Team2015sPage() {
 
   <YouthInfoCard
     icon={<Users />}
-    title="ZIDANE 
+    title="ZIDANE" 
     text="Coming Soon"
   />
 
