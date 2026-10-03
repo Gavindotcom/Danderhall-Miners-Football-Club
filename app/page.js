@@ -13,29 +13,7 @@ export default function Home() {
     <main>
 
       {/* NAVIGATION */}
-      <header className="navbar">
-        <div className="nav-inner">
-          <a href="#" className="brand">
-            <img src="/images/badge.png" alt="Danderhall Miners FC" />
-          </a>
-
-          <nav className="desktop-nav">
-           <a className="active" href="/">Home</a>
-<a href="/our-club">Our Club</a>
-<a href="/teams">Teams</a>
-<a href="/community">Community</a>
-<a href="/facilities">Facilities</a>
-<a href="/safeguarding">Safeguarding</a>
-<a href="/sponsors">Sponsors</a>
-<a href="/news">News</a>
-<a href="/contact">Contact</a>
-          </nav>
-
-          <a href="#contact" className="btn btn-yellow nav-button">
-            Join Our Club
-          </a>
-        </div>
-      </header>
+     <Header />
 
       {/* HERO */}
       <section className="hero">
