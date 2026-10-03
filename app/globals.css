@@ -2348,3 +2348,25 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+/* CLICKABLE 2015s TEAM CARDS */
+
+.youth-team-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.youth-team-card-link .youth-info-card {
+  height: 100%;
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.youth-team-card-link:hover .youth-info-card {
+  transform: translateY(-6px);
+  background: #202020;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.25);
+}
